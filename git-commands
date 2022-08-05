@@ -1,0 +1,40 @@
+hello this repo contains github commands that we can use of project based works.
+
+git init -> initialize a local git repository.
+git clone [file name from the github code option and copy the ssh option] -> create a local copy of the remote repository.
+
+git status -> check status of the file system in local repository.
+git add [filename.txt] -> add a file to the staging area.
+git add -A -> to add all the files to the staging area.
+git commit -m "[commit message]" -> commit changes to the files in the staging area.
+git rm -r [filename.txt] -> to remove a file from the staging area and working directory.
+
+git branch -> list branches (the * mark on the branch denotes the working branch).
+git branch -a -> list all the branches.
+git branch [branch name] -> create a new branch.
+git branch -d [branch name] -> delete branch.
+git push origin --delete [branch name] -> delete a remote branch.
+git checkout -b [branch name] -> create a new branch and switch to it.
+git checkout -b [branch name] origin/[branch name] -> clone a remote branch and switch to it.
+git branch -m [old branch name] [new branch name] -> rename a local branch.
+git checkout [branch name] -> switch to a branch.
+git checkout - -> switch to a branch last checked out.
+git checkout -- [filename.txt] -> discard changes to a file.
+git merge [branch name] -> merge a branch into the active branch.
+git merge [source branch] [target branch] -> merge a branch into the target branch.
+git stash -> stash changes in a dirty working directory.
+git stash clear -> remove all stash entries.
+
+git push origin [branch name] -> push a branch to your remote repository.
+git push -u origin [branch name] -> push changes to remote repository(and remember the branch).
+git push -> push changes to remote repository(to the remembered branch).
+git push origin --delete [branch name] -> delete a remote branch.
+git pull -> update local repository to the newest commit.
+git pull origin [branch name] -> pull changes from remote repository.
+git remote add origin [ssh code of the repository] -> add a remote repository.
+git remote set-url origin [ssh code of the repository] -> set repository's origin branch to ssh.
+
+git log -> view changes.
+git log --summary -> view changes (detailed).
+git log --oneline -> view changes(briefly)
+git diff [source branch] [target branch] - preview changes before merging.
